@@ -1,0 +1,16 @@
+<%-- Author: Lukas Schütte --%>
+<fieldset>
+	<legend>User</legend>
+	<span class="sp_user">Hallo <% out.println(session.getAttribute("username")); %></span><br />
+	<% out.println(session.getAttribute("vorname")); %>,
+	<% out.println(session.getAttribute("nachname")); %>
+	<% out.print("<br/ ><a href=\"jsp/search.jsp\">Suche</a>");%>
+	 | 
+	<% 
+		if (session.getAttribute("admin").equals(1))
+		{
+			out.println("<a href=\"jsp/admin.jsp\">Admin</a> | <a href=\"index.jsp\">Index</a>");
+		}
+	%>
+	| <a href="logoutServlet" title="Logout">Logout</a>
+</fieldset>

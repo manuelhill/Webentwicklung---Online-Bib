@@ -1,0 +1,95 @@
+/**
+ * @author: Lukas Schütte, Manuel Hill
+ */
+html {
+	width: 100vw;
+}
+
+body {
+	width: 99vw;
+	color: black;
+	overflow-x: hidden;
+}
+
+a
+{
+	text-decoration: none;
+	color: #005A9B;
+}
+
+
+#header {
+	border-bottom: 1px solid black;
+	position: fixed;
+	z-index: 100;
+	background-color: #005A9B;
+	color: white;
+	width: 100vw;
+	height: 150px;
+	top: 0px;
+	left: 0px;
+	text-align: center;
+}
+
+#header a
+{
+	color: white;
+}
+
+#div_standardHeader {
+	width: 99vw;
+}
+
+#div_userHeader
+{
+	color:white;
+	position: absolute;
+	z-index: 100;
+	margin-left: 80vw;
+	margin-top: -65px;
+}
+
+.sp_user {
+	font-size: 20pt;
+}
+
+#div_registrieren {
+	position: absolute;
+	z-index: 100;
+	margin-left: 10vw;
+	margin-top: 20vh;
+}
+
+#div_indexbibliothek {
+	text-align: center;
+	margin-top: 10px;
+}
+
+#tb_indexbibliothek {
+	width: 500px;
+}
+
+#side {
+	position: fixed;
+	background-color: white;
+	border-right: 1px solid black;
+	border-top: 1px solid black;
+	top: 150px;
+	left: 0px;
+	width: 12vw;
+	height: 90vh;
+	padding: 20px;
+}
+
+#content {
+	position: absolute;
+	background-color: white;
+	z-index: 10;
+	top: 110px;
+	left: 12vw;
+	width: 60vw;
+	height: 100vh;
+	margin: 50px;
+	padding: 50px;
+	border-left: 1px solid black;
+}

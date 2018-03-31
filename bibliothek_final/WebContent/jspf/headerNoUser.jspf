@@ -1,0 +1,18 @@
+<%-- Author: Lukas Schütte --%>
+<form method="post" action="loginServlet">
+	<fieldset>
+		<legend>Login</legend>
+		<div>
+			<label id="username" for="username">Username</label> <input
+				type="text" name="username" id="username" placeholder="Username">
+		</div>
+		<div>
+			<label id="password" for="password">Password:</label> <input
+				type="password" name="password" id="password" placeholder="Password">
+		</div>
+		<div>
+			<button name="buttonLogin" id="buttonLogin" type="submit">Login</button>
+			<a href="registrieren.jsp">registrieren</a>
+		</div>
+	</fieldset>
+</form>
